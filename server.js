@@ -630,7 +630,7 @@ function getDashboardHtml(ip, port) {
   </div>
 
   <script>
-    const serverUrl = 'http://${ip}:${port}';
+    const serverUrl = window.location.origin;
     let map = null;
     let marker = null;
     let accCircle = null;
