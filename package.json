@@ -1,0 +1,25 @@
+{
+  "name": "location-tracker-backend",
+  "version": "1.0.0",
+  "description": "Real-time GPS Tracking Backend & Live Map Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "gps",
+    "tracker",
+    "location",
+    "realtime",
+    "leaflet",
+    "sse"
+  ],
+  "author": "Muthu",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^18.0.10",
+    "localtunnel": "^2.0.2",
+    "mongoose": "^9.12.2"
+  }
+}
