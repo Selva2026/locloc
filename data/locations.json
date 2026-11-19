@@ -1,0 +1,1663 @@
+[
+  {
+    "id": "loc_1795084444486_9csmh",
+    "deviceId": "MUTHU_PHONE",
+    "userId": null,
+    "timestamp": "2026-11-19T10:34:04.469Z",
+    "epoch": 1795084444486,
+    "coordinates": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "accuracy": 4.5,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 12.5,
+      "speedKmH": 45
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.2707,
+        13.0827
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:34:04.486Z"
+  },
+  {
+    "id": "loc_1795084732675_yt1a0",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:38:52.657Z",
+    "epoch": 1795084732657,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:38:52.675Z"
+  },
+  {
+    "id": "loc_1795084739512_7resx",
+    "deviceId": "DEV_60DFL3",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:38:59.496Z",
+    "epoch": 1795084739496,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:38:59.512Z"
+  },
+  {
+    "id": "loc_1795084739519_bic55",
+    "deviceId": "DEV_60DFL3",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:38:59.503Z",
+    "epoch": 1795084739503,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:38:59.519Z"
+  },
+  {
+    "id": "loc_1795084769891_oxbx0",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:29.878Z",
+    "epoch": 1795084769878,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:39:29.892Z"
+  },
+  {
+    "id": "loc_1795084769898_8zpkc",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:29.881Z",
+    "epoch": 1795084769881,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:39:29.898Z"
+  },
+  {
+    "id": "loc_1795084779369_ccwr3",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:39.362Z",
+    "epoch": 1795084779362,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:39:39.369Z"
+  },
+  {
+    "id": "loc_1795084781504_svcf6",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:41.495Z",
+    "epoch": 1795084781495,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "manual"
+    },
+    "receivedAt": "2026-11-19T10:39:41.504Z"
+  },
+  {
+    "id": "loc_1795084782236_xo8nn",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:42.229Z",
+    "epoch": 1795084782229,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "manual"
+    },
+    "receivedAt": "2026-11-19T10:39:42.236Z"
+  },
+  {
+    "id": "loc_1795084782886_y15p7",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:42.879Z",
+    "epoch": 1795084782879,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "manual"
+    },
+    "receivedAt": "2026-11-19T10:39:42.886Z"
+  },
+  {
+    "id": "loc_1795084792616_m17yk",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:52.611Z",
+    "epoch": 1795084792611,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "manual"
+    },
+    "receivedAt": "2026-11-19T10:39:52.616Z"
+  },
+  {
+    "id": "loc_1795084794244_hwai6",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:39:54.229Z",
+    "epoch": 1795084794229,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:39:54.244Z"
+  },
+  {
+    "id": "loc_1795084810207_l0prl",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:40:10.199Z",
+    "epoch": 1795084810199,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:40:10.208Z"
+  },
+  {
+    "id": "loc_1795084824506_7zbpc",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:40:24.499Z",
+    "epoch": 1795084824499,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:40:24.506Z"
+  },
+  {
+    "id": "loc_1795084839681_u9jbw",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:40:39.669Z",
+    "epoch": 1795084839669,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:40:39.681Z"
+  },
+  {
+    "id": "loc_1795084848565_hmvvc",
+    "deviceId": "MUTHU_LIVE_DEMO",
+    "userId": "driver-01",
+    "timestamp": "2026-11-19T10:40:48.422Z",
+    "epoch": 1795084848565,
+    "coordinates": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "accuracy": 5.2,
+      "altitude": 12,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 2.7777777777777777,
+      "speedKmH": 10
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.2707,
+        13.0827
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:40:48.565Z"
+  },
+  {
+    "id": "loc_1795084849190_qk6ba",
+    "deviceId": "MUTHU_LIVE_DEMO",
+    "userId": "driver-01",
+    "timestamp": "2026-11-19T10:40:49.189Z",
+    "epoch": 1795084849190,
+    "coordinates": {
+      "latitude": 13.0845,
+      "longitude": 80.2725,
+      "accuracy": 5.2,
+      "altitude": 12,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 6.944444444444445,
+      "speedKmH": 25
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.2725,
+        13.0845
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:40:49.190Z"
+  },
+  {
+    "id": "loc_1795084849800_kces8",
+    "deviceId": "MUTHU_LIVE_DEMO",
+    "userId": "driver-01",
+    "timestamp": "2026-11-19T10:40:49.799Z",
+    "epoch": 1795084849800,
+    "coordinates": {
+      "latitude": 13.087,
+      "longitude": 80.275,
+      "accuracy": 5.2,
+      "altitude": 12,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 8.88888888888889,
+      "speedKmH": 32
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.275,
+        13.087
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:40:49.800Z"
+  },
+  {
+    "id": "loc_1795084850408_hx7os",
+    "deviceId": "MUTHU_LIVE_DEMO",
+    "userId": "driver-01",
+    "timestamp": "2026-11-19T10:40:50.408Z",
+    "epoch": 1795084850408,
+    "coordinates": {
+      "latitude": 13.0895,
+      "longitude": 80.278,
+      "accuracy": 5.2,
+      "altitude": 12,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 11.11111111111111,
+      "speedKmH": 40
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.278,
+        13.0895
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:40:50.408Z"
+  },
+  {
+    "id": "loc_1795084851013_nfjk3",
+    "deviceId": "MUTHU_LIVE_DEMO",
+    "userId": "driver-01",
+    "timestamp": "2026-11-19T10:40:51.012Z",
+    "epoch": 1795084851013,
+    "coordinates": {
+      "latitude": 13.092,
+      "longitude": 80.281,
+      "accuracy": 5.2,
+      "altitude": 12,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 9.722222222222221,
+      "speedKmH": 35
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.281,
+        13.092
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:40:51.013Z"
+  },
+  {
+    "id": "loc_1795084856760_zmui7",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:40:56.754Z",
+    "epoch": 1795084856754,
+    "coordinates": {
+      "latitude": 13.088231208474133,
+      "longitude": 80.18469697942369,
+      "accuracy": 111,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18469697942369,
+        13.088231208474133
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:40:56.760Z"
+  },
+  {
+    "id": "loc_1795084870864_nizx2",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:41:10.857Z",
+    "epoch": 1795084870857,
+    "coordinates": {
+      "latitude": 13.088231208474133,
+      "longitude": 80.18469697942369,
+      "accuracy": 111,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18469697942369,
+        13.088231208474133
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:41:10.864Z"
+  },
+  {
+    "id": "loc_1795084884512_tyi4z",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:41:24.505Z",
+    "epoch": 1795084884505,
+    "coordinates": {
+      "latitude": 13.088231208474133,
+      "longitude": 80.18469697942369,
+      "accuracy": 111,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18469697942369,
+        13.088231208474133
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:41:24.512Z"
+  },
+  {
+    "id": "loc_1795084899830_ui6ad",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:41:39.823Z",
+    "epoch": 1795084899823,
+    "coordinates": {
+      "latitude": 13.088231208474133,
+      "longitude": 80.18469697942369,
+      "accuracy": 111,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18469697942369,
+        13.088231208474133
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:41:39.830Z"
+  },
+  {
+    "id": "loc_1795084914740_45w3p",
+    "deviceId": "DEV_YPGLP2",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:41:54.734Z",
+    "epoch": 1795084914734,
+    "coordinates": {
+      "latitude": 13.088231208474133,
+      "longitude": 80.18469697942369,
+      "accuracy": 111,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18469697942369,
+        13.088231208474133
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:41:54.740Z"
+  },
+  {
+    "id": "loc_1795085136676_e6xt6",
+    "deviceId": "PHONE_VIA_4G_DATA",
+    "userId": null,
+    "timestamp": "2026-11-19T10:45:36.676Z",
+    "epoch": 1795085136676,
+    "coordinates": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "accuracy": 3.8,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": 15.2,
+      "speedKmH": 54.7
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.2707,
+        13.0827
+      ]
+    },
+    "metadata": {},
+    "receivedAt": "2026-11-19T10:45:36.676Z"
+  },
+  {
+    "id": "loc_1795085426026_a4v7r",
+    "deviceId": "DEV_9HELH9",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:50:25.783Z",
+    "epoch": 1795085425783,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:50:26.026Z"
+  },
+  {
+    "id": "loc_1795085426077_mbwp8",
+    "deviceId": "DEV_9HELH9",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:50:25.795Z",
+    "epoch": 1795085425795,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:50:26.077Z"
+  },
+  {
+    "id": "loc_1795085448949_tg0kv",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:50:48.789Z",
+    "epoch": 1795085448789,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:50:48.949Z"
+  },
+  {
+    "id": "loc_1795085448967_wf8kx",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:50:48.780Z",
+    "epoch": 1795085448780,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "stealth"
+    },
+    "receivedAt": "2026-11-19T10:50:48.968Z"
+  },
+  {
+    "id": "loc_1795085464552_pbccf",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:51:04.366Z",
+    "epoch": 1795085464366,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:51:04.552Z"
+  },
+  {
+    "id": "loc_1795085479683_js0lq",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:51:19.519Z",
+    "epoch": 1795085479519,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:51:19.683Z"
+  },
+  {
+    "id": "loc_1795085496589_r0xaj",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:51:36.425Z",
+    "epoch": 1795085496425,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:51:36.589Z"
+  },
+  {
+    "id": "loc_1795085500621_nl82x",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:51:40.477Z",
+    "epoch": 1795085500477,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "manual"
+    },
+    "receivedAt": "2026-11-19T10:51:40.621Z"
+  },
+  {
+    "id": "loc_1795085510828_un1yp",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:51:50.640Z",
+    "epoch": 1795085510640,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:51:50.828Z"
+  },
+  {
+    "id": "loc_1795085526787_4t5tl",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:52:06.002Z",
+    "epoch": 1795085526002,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:52:06.787Z"
+  },
+  {
+    "id": "loc_1795085544392_4hrv1",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:52:23.650Z",
+    "epoch": 1795085543650,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:52:24.392Z"
+  },
+  {
+    "id": "loc_1795085558711_hat6f",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:52:37.850Z",
+    "epoch": 1795085557850,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:52:38.712Z"
+  },
+  {
+    "id": "loc_1795085579268_b4tpx",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:52:57.912Z",
+    "epoch": 1795085577912,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:52:59.268Z"
+  },
+  {
+    "id": "loc_1795085594883_hc415",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:53:13.650Z",
+    "epoch": 1795085593650,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:53:14.883Z"
+  },
+  {
+    "id": "loc_1795085604024_xj4g2",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:53:23.344Z",
+    "epoch": 1795085603344,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:53:24.024Z"
+  },
+  {
+    "id": "loc_1795085622872_b9in3",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:53:42.584Z",
+    "epoch": 1795085622584,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:53:42.872Z"
+  },
+  {
+    "id": "loc_1795085632971_kpx3r",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:53:52.803Z",
+    "epoch": 1795085632803,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:53:52.971Z"
+  },
+  {
+    "id": "loc_1795085648513_fhron",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:54:07.855Z",
+    "epoch": 1795085647855,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:54:08.513Z"
+  },
+  {
+    "id": "loc_1795085661813_l8fih",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:54:21.594Z",
+    "epoch": 1795085661594,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:54:21.813Z"
+  },
+  {
+    "id": "loc_1795085676945_nt50k",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:54:36.656Z",
+    "epoch": 1795085676656,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:54:36.946Z"
+  },
+  {
+    "id": "loc_1795085694259_yaudr",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:54:53.676Z",
+    "epoch": 1795085693676,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:54:54.259Z"
+  },
+  {
+    "id": "loc_1795085706706_3alc7",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:55:06.550Z",
+    "epoch": 1795085706550,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:55:06.706Z"
+  },
+  {
+    "id": "loc_1795085721831_a31wm",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:55:21.473Z",
+    "epoch": 1795085721473,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:55:21.831Z"
+  },
+  {
+    "id": "loc_1795085736728_xxirn",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:55:36.504Z",
+    "epoch": 1795085736504,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:55:36.729Z"
+  },
+  {
+    "id": "loc_1795085751787_whxxs",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:55:51.627Z",
+    "epoch": 1795085751627,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:55:51.787Z"
+  },
+  {
+    "id": "loc_1795085770568_0z04d",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:56:10.260Z",
+    "epoch": 1795085770260,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:56:10.568Z"
+  },
+  {
+    "id": "loc_1795085783360_uuwea",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:56:23.027Z",
+    "epoch": 1795085783027,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:56:23.360Z"
+  },
+  {
+    "id": "loc_1795085796719_xqf0s",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:56:36.542Z",
+    "epoch": 1795085796542,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:56:36.719Z"
+  },
+  {
+    "id": "loc_1795085812598_gub0w",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:56:52.022Z",
+    "epoch": 1795085812022,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:56:52.598Z"
+  },
+  {
+    "id": "loc_1795085826842_7488g",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:57:06.688Z",
+    "epoch": 1795085826688,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:57:06.842Z"
+  },
+  {
+    "id": "loc_1795085845288_hwmri",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:57:24.415Z",
+    "epoch": 1795085844415,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:57:25.288Z"
+  },
+  {
+    "id": "loc_1795085857779_z3xlg",
+    "deviceId": "DEV_WSNOSZ",
+    "userId": "device-owner",
+    "timestamp": "2026-11-19T10:57:37.612Z",
+    "epoch": 1795085857612,
+    "coordinates": {
+      "latitude": 13.088231244419617,
+      "longitude": 80.18470937013511,
+      "accuracy": 108,
+      "altitude": null,
+      "altitudeAccuracy": null,
+      "heading": null,
+      "speed": null,
+      "speedKmH": 0
+    },
+    "geo": {
+      "type": "Point",
+      "coordinates": [
+        80.18470937013511,
+        13.088231244419617
+      ]
+    },
+    "metadata": {
+      "appVersion": "1.0.0",
+      "trackingMode": "periodic"
+    },
+    "receivedAt": "2026-11-19T10:57:37.780Z"
+  }
+]
