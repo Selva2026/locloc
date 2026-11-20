@@ -1,6 +1,8 @@
 // Real-time GPS Tracking Backend & Live Map Dashboard
 // Integrated with MongoDB Atlas & Local Persistent Storage Fallback
-require('dotenv').config();
+try {
+  require('dotenv').config();
+} catch (e) {}
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -28,6 +30,7 @@ let latestLocation = null;
 const sseClients = new Set();
 let isMongoConnected = false;
 let mongoError = null;
+const pendingLocationRequests = new Map(); // deviceId or '*' -> { timestamp, requested: true }
 
 // Detect Local Wi-Fi / LAN IP
 function getLocalIp() {
@@ -216,6 +219,10 @@ const server = http.createServer(async (req, res) => {
       latestLocation = record;
       persistLocations();
 
+      // Clear any pending on-demand fetch requests
+      pendingLocationRequests.delete('*');
+      if (deviceId) pendingLocationRequests.delete(deviceId);
+
       // 3. Broadcast to live web dashboard
       broadcastLocation({ type: 'location', payload: record });
 
@@ -241,6 +248,77 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(400, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: err.message }));
     }
+    return;
+  }
+
+  // --- Route 1B: Trigger On-Demand Location Fetch from Dashboard ---
+  if (req.method === 'POST' && (pathname === '/api/location/request' || pathname === '/api/request-location')) {
+    try {
+      let targetDevice = '*';
+      try {
+        const body = await parseJsonBody(req);
+        if (body && body.deviceId) targetDevice = body.deviceId;
+      } catch (e) {}
+
+      pendingLocationRequests.set(targetDevice, {
+        timestamp: Date.now(),
+        requested: true,
+      });
+
+      console.log(`\x1b[35m[Fetch Command]\x1b[0m On-demand fetch requested for: \x1b[36m${targetDevice}\x1b[0m`);
+
+      broadcastLocation({
+        type: 'fetch_requested',
+        targetDevice,
+        timestamp: Date.now(),
+      });
+
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(
+        JSON.stringify({
+          success: true,
+          message: 'Location fetch command dispatched. Waiting for mobile response...',
+          targetDevice,
+          requestedAt: new Date().toISOString(),
+        })
+      );
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // --- Route 1C: Mobile Device Checks for Remote Commands ---
+  if (req.method === 'GET' && (pathname === '/api/location/command' || pathname === '/api/command')) {
+    const devId = parsedUrl.query.deviceId || '*';
+    const reqInfo = pendingLocationRequests.get(devId) || pendingLocationRequests.get('*');
+
+    // If fetch command was issued within the last 90 seconds
+    if (reqInfo && reqInfo.requested && (Date.now() - reqInfo.timestamp < 90000)) {
+      pendingLocationRequests.delete(devId);
+      pendingLocationRequests.delete('*');
+
+      console.log(`\x1b[32m[Command Dispatched]\x1b[0m Sending FETCH_LOCATION to mobile device: \x1b[36m${devId}\x1b[0m`);
+
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(
+        JSON.stringify({
+          command: 'FETCH_LOCATION',
+          requestedAt: reqInfo.timestamp,
+          timestamp: Date.now(),
+        })
+      );
+      return;
+    }
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(
+      JSON.stringify({
+        command: 'IDLE',
+        timestamp: Date.now(),
+      })
+    );
     return;
   }
 
@@ -449,6 +527,62 @@ function getDashboardHtml(ip, port) {
     }
     .copy-url-btn:hover { background: #1d4ed8; }
 
+    .fetch-btn {
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      padding: 7px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.4);
+      transition: all 0.2s ease;
+    }
+    .fetch-btn:hover {
+      background: linear-gradient(135deg, #059669, #047857);
+      transform: translateY(-1px);
+    }
+    .fetch-btn:disabled {
+      background: #4b5563 !important;
+      box-shadow: none;
+      cursor: not-allowed;
+      opacity: 0.7;
+      transform: none;
+    }
+    .fetch-btn.loading {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      animation: pulse 1.2s infinite;
+    }
+    .fetch-btn-large {
+      width: 100%;
+      background: linear-gradient(135deg, #10b981, #059669);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+      transition: all 0.2s;
+    }
+    .fetch-btn-large:hover {
+      background: linear-gradient(135deg, #059669, #047857);
+    }
+    .fetch-btn-large:disabled {
+      background: #4b5563 !important;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
     .main-wrap { display: flex; flex: 1; position: relative; height: calc(100vh - 65px); }
     #map { flex: 1; height: 100%; width: 100%; z-index: 1; background: #0f172a; }
 
@@ -545,6 +679,9 @@ function getDashboardHtml(ip, port) {
       </div>
     </div>
     <div class="header-actions">
+      <button class="fetch-btn" id="fetchLocBtn" onclick="requestDeviceLocation()">
+        📍 Fetch Location Now
+      </button>
       <div class="status-badge">
         <span class="status-dot" id="liveDot"></span>
         <span id="connStatus">Waiting for connection...</span>
@@ -558,6 +695,10 @@ function getDashboardHtml(ip, port) {
     <div id="map"></div>
 
     <div class="hud-panel">
+      <button class="fetch-btn-large" id="hudFetchLocBtn" onclick="requestDeviceLocation()">
+        📍 Fetch Location Now
+      </button>
+
       <div class="hud-title-row">
         <span>Device Telemetry</span>
         <span id="pingCountBadge" style="color: #60a5fa;">0 Pings</span>
@@ -565,7 +706,7 @@ function getDashboardHtml(ip, port) {
 
       <div class="url-banner">
         <strong>Mobile App Target URL:</strong>
-        <code id="endpointCode">http://${ip}:${port}/api/location</code>
+        <code id="endpointCode">Loading...</code>
       </div>
 
       <div class="hud-grid">
@@ -751,6 +892,23 @@ function getDashboardHtml(ip, port) {
           if (data.type === 'location' && data.payload) {
             addPointToMap(data.payload, true);
             updateHUD(data.payload);
+
+            if (isFetching) {
+              isFetching = false;
+              if (fetchTimeoutTimer) clearTimeout(fetchTimeoutTimer);
+              const btns = [document.getElementById('fetchLocBtn'), document.getElementById('hudFetchLocBtn')];
+              btns.forEach(b => {
+                if (b) {
+                  b.disabled = false;
+                  b.classList.remove('loading');
+                  b.innerText = '✅ Location Received!';
+                  setTimeout(() => {
+                    b.innerText = '📍 Fetch Location Now';
+                  }, 3500);
+                }
+              });
+              document.getElementById('connStatus').innerText = 'Live GPS Received just now!';
+            }
           } else if (data.type === 'cleared') {
             pathCoords = [];
             polyline.setLatLngs([]);
@@ -793,7 +951,61 @@ function getDashboardHtml(ip, port) {
       }
     }
 
+    let isFetching = false;
+    let fetchTimeoutTimer = null;
+
+    async function requestDeviceLocation() {
+      if (isFetching) return;
+      isFetching = true;
+
+      const btns = [document.getElementById('fetchLocBtn'), document.getElementById('hudFetchLocBtn')];
+      btns.forEach(b => {
+        if (b) {
+          b.disabled = true;
+          b.classList.add('loading');
+          b.innerText = '⏳ Requesting Device...';
+        }
+      });
+      document.getElementById('connStatus').innerText = 'Command sent! Waiting for GPS response...';
+
+      try {
+        const res = await fetch('/api/location/request', { method: 'POST' });
+        const data = await res.json();
+        console.log('Fetch dispatched to server:', data);
+
+        // Reset if no response within 25 seconds
+        if (fetchTimeoutTimer) clearTimeout(fetchTimeoutTimer);
+        fetchTimeoutTimer = setTimeout(() => {
+          if (isFetching) {
+            isFetching = false;
+            btns.forEach(b => {
+              if (b) {
+                b.disabled = false;
+                b.classList.remove('loading');
+                b.innerText = '📍 Fetch Location Now';
+              }
+            });
+            document.getElementById('connStatus').innerText = 'Phone hasn\'t responded yet (may be sleeping/offline)';
+          }
+        }, 25000);
+      } catch (e) {
+        console.error('Fetch error:', e);
+        isFetching = false;
+        btns.forEach(b => {
+          if (b) {
+            b.disabled = false;
+            b.classList.remove('loading');
+            b.innerText = '📍 Fetch Location Now';
+          }
+        });
+      }
+    }
+
     window.onload = () => {
+      const codeElem = document.getElementById('endpointCode');
+      if (codeElem) {
+        codeElem.innerText = window.location.origin + '/api/location';
+      }
       initMap();
       setupStream();
     };
