@@ -1019,7 +1019,7 @@ function getDashboardHtml(ip, port) {
                 b.innerText = '📍 Fetch Location Now';
               }
             });
-            document.getElementById('connStatus').innerText = 'Phone hasn\'t responded yet (may be sleeping/offline)';
+            document.getElementById('connStatus').innerText = "Phone has not responded yet (may be sleeping or offline)";
           }
         }, 25000);
       } catch (e) {
