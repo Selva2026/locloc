@@ -326,8 +326,9 @@ const server = http.createServer(async (req, res) => {
   if (req.method === 'GET' && pathname === '/api/location/stream') {
     res.writeHead(200, {
       'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
-      Connection: 'keep-alive',
+      'Cache-Control': 'no-cache, no-transform',
+      'Connection': 'keep-alive',
+      'X-Accel-Buffering': 'no',
     });
 
     res.write(`data: ${JSON.stringify({ type: 'connected', totalPoints: locationHistory.length, db: isMongoConnected ? 'MongoDB' : 'Local File' })}\n\n`);
@@ -890,25 +891,10 @@ function getDashboardHtml(ip, port) {
         try {
           const data = JSON.parse(event.data);
           if (data.type === 'location' && data.payload) {
-            addPointToMap(data.payload, true);
-            updateHUD(data.payload);
-
-            if (isFetching) {
-              isFetching = false;
-              if (fetchTimeoutTimer) clearTimeout(fetchTimeoutTimer);
-              const btns = [document.getElementById('fetchLocBtn'), document.getElementById('hudFetchLocBtn')];
-              btns.forEach(b => {
-                if (b) {
-                  b.disabled = false;
-                  b.classList.remove('loading');
-                  b.innerText = '✅ Location Received!';
-                  setTimeout(() => {
-                    b.innerText = '📍 Fetch Location Now';
-                  }, 3500);
-                }
-              });
-              document.getElementById('connStatus').innerText = 'Live GPS Received just now!';
+            if (data.payload.receivedAt) {
+              lastKnownRecordTime = new Date(data.payload.receivedAt).getTime();
             }
+            handleNewLocationRecord(data.payload);
           } else if (data.type === 'cleared') {
             pathCoords = [];
             polyline.setLatLngs([]);
@@ -953,11 +939,36 @@ function getDashboardHtml(ip, port) {
 
     let isFetching = false;
     let fetchTimeoutTimer = null;
+    let lastKnownRecordTime = 0;
+
+    function handleNewLocationRecord(payload) {
+      if (!payload || !payload.coordinates) return;
+      addPointToMap(payload, true);
+      updateHUD(payload);
+
+      if (isFetching) {
+        isFetching = false;
+        if (fetchTimeoutTimer) clearTimeout(fetchTimeoutTimer);
+        const btns = [document.getElementById('fetchLocBtn'), document.getElementById('hudFetchLocBtn')];
+        btns.forEach(b => {
+          if (b) {
+            b.disabled = false;
+            b.classList.remove('loading');
+            b.innerText = '✅ Location Received!';
+            setTimeout(() => {
+              b.innerText = '📍 Fetch Location Now';
+            }, 3500);
+          }
+        });
+        document.getElementById('connStatus').innerText = 'Live GPS Received just now!';
+      }
+    }
 
     async function requestDeviceLocation() {
       if (isFetching) return;
       isFetching = true;
 
+      const clickTimestamp = Date.now();
       const btns = [document.getElementById('fetchLocBtn'), document.getElementById('hudFetchLocBtn')];
       btns.forEach(b => {
         if (b) {
@@ -973,11 +984,34 @@ function getDashboardHtml(ip, port) {
         const data = await res.json();
         console.log('Fetch dispatched to server:', data);
 
+        // Active 2-second HTTP polling fallback alongside SSE
+        const pollInterval = setInterval(async () => {
+          if (!isFetching) {
+            clearInterval(pollInterval);
+            return;
+          }
+          try {
+            const r = await fetch('/api/location/latest');
+            if (r.ok) {
+              const latest = await r.json();
+              if (latest && latest.receivedAt) {
+                const recTime = new Date(latest.receivedAt).getTime();
+                if (recTime >= clickTimestamp - 2000 && recTime > lastKnownRecordTime) {
+                  lastKnownRecordTime = recTime;
+                  clearInterval(pollInterval);
+                  handleNewLocationRecord(latest);
+                }
+              }
+            }
+          } catch (pe) {}
+        }, 2000);
+
         // Reset if no response within 25 seconds
         if (fetchTimeoutTimer) clearTimeout(fetchTimeoutTimer);
         fetchTimeoutTimer = setTimeout(() => {
           if (isFetching) {
             isFetching = false;
+            clearInterval(pollInterval);
             btns.forEach(b => {
               if (b) {
                 b.disabled = false;
